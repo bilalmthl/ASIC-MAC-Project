@@ -16,8 +16,8 @@ setenv ASAP7_OA_LIB $ASAP7_LIB_DIR/asap7sc7p5t_OA_RVT_TT_nldm_211120.lib
 
 setenv ASAP7_LIBS "$ASAP7_INVBUF_LIB $ASAP7_SIMPLE_LIB $ASAP7_SEQ_LIB $ASAP7_AO_LIB $ASAP7_OA_LIB"
 
-setenv ASAP7_TECH_LEF $ASAP7_SC/techlef_misc/asap7_tech_1x_201209.lef
-setenv ASAP7_CELL_LEF $ASAP7_SC/LEF/asap7sc7p5t_28_R_1x_220121a.lef
+setenv ASAP7_TECH_LEF $ASAP7_SC/techlef_misc/asap7_tech_4x_201209.lef
+setenv ASAP7_CELL_LEF $ASAP7_SC/LEF/scaled/asap7sc7p5t_28_R_4x_220121a.lef
 setenv ASAP7_CELL_VERILOG $ASAP7_SC/Verilog/asap7sc7p5t_SIMPLE_RVT_TT_201020.v
 
 echo "PROJ_ROOT          = $PROJ_ROOT"
