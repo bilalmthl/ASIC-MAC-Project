@@ -1,0 +1,48 @@
+# PDKs and foundry/library files
+pdks/
+*.lib
+*.lib.7z
+*.lef
+*.db
+
+# Cadence generated files
+*.log
+*.cmd
+*.jou
+*.rpt
+*.history
+*.key
+*.str
+*.def
+*.gds
+*.spef
+*.sdf
+*.vcd
+*.fsdb
+*.shm
+*.wdb
+*.d
+*.so
+*.cmd*
+*.log*
+*.logv
+
+# Project output folders
+logs/
+reports/
+results/
+work/
+
+# Tool run folders
+INCA_libs/
+xcelium.d/
+genus_work/
+innovus_work/
+fv/
+dbs/
+snapshots/
+
+# OS/editor
+.DS_Store
+*.swp
+*~
