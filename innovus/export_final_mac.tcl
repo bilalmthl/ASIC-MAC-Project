@@ -23,13 +23,16 @@ saveNetlist $PROJ_ROOT/results/final/mac_postroute.v
 write_sdc   $PROJ_ROOT/results/final/mac_postroute.sdc
 defOut      $PROJ_ROOT/results/final/mac_postroute.def
 
-# GDS export skipped for now because ASAP7 streamOut.map was not found
-# streamOut $PROJ_ROOT/results/final/mac_postroute.gds \
-#     -mapFile $env(ASAP7_SC)/techlef_misc/streamOut.map \
-#     -libName DesignLib \
-#     -structureName mac \
-#     -units 1000 \
-#     -mode ALL
+# GDS export 
+set ASAP7_STREAM_MAP $PROJ_ROOT/pdks/asap7/asap7_pdk_r1p7/cdslib/asap7_TechLib_10/asap7_fromAPR_08b.layermap
+set ASAP7_STDCELL_GDS $PROJ_ROOT/pdks/asap7/asap7sc7p5t_28/GDS/asap7sc7p5t_28_R_220121a.gds
+streamOut $PROJ_ROOT/results/final/mac_postroute.gds \
+    -mapFile $ASAP7_STREAM_MAP \
+    -merge $ASAP7_STDCELL_GDS \
+    -libName DesignLib \
+    -structureName mac \
+    -units 1000 \
+    -mode ALL
 
 # Save final Innovus database
 saveDesign $PROJ_ROOT/results/final/mac_postroute_final.enc
