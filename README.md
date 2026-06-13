@@ -1,6 +1,6 @@
 # ASIC MAC Project
 
-This project implements and benchmarks a custom SystemVerilog Multiply-Accumulate (MAC) unit using a Cadence RTL-to-GDSII digital design flow.
+This project implements and benchmarks a custom SystemVerilog Multiply-Accumulate (MAC) unit using a Cadence RTL-to-GDSII digital design flow. For summarized baseline and pipelined post-route PPA results, see [`FINAL_RESULTS.md`](FINAL_RESULTS.md).
 
 ## Current Flow
 
