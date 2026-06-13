@@ -15,7 +15,7 @@ This project implements and benchmarks a custom SystemVerilog Multiply-Accumulat
 The ASAP7 PDK and standard-cell libraries are not included in this repository. They should be installed locally under:
 
 ```text
-~/asic_mac_project/pdks/asap7
+~/asic_mac_unit/pdks/asap7
 ```
 
 Then source:
